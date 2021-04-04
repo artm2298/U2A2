@@ -38,7 +38,22 @@ class CalculatorAppState extends State<CalculatorApp> {
             Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
-                  //Componente boton
+                  
+                  
+                  
+                        //Componente boton 0
+                  Container(
+                      padding: EdgeInsets.all(2.0),
+                      child: ElevatedButton(
+                        child: Text(
+                          "0",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                   //     color: Colors.black,
+                        onPressed: ( ) {onPressOfButton("0",0);},
+                      )),
+                  
+                  //Componente boton 1
                   Container(
                       padding: EdgeInsets.all(2.0),
                       child: ElevatedButton(
@@ -114,15 +129,9 @@ class CalculatorAppState extends State<CalculatorApp> {
                         onPressed: () {onPressOfButton("6",6); 
  },
                       )),
-
-                ]),
-            
-            
-            
-            Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  //Componente boton
+                  
+                  
+                  //Componente boton 7
                   Container(
                       padding: EdgeInsets.all(2.0),
                       child: ElevatedButton(
@@ -133,6 +142,15 @@ class CalculatorAppState extends State<CalculatorApp> {
                     //    color: Colors.red,
                        onPressed: () {onPressOfButton("7",7);},
                       )),
+
+                ]),
+            
+            
+            
+            Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+
                   //Componente boton
                   Container(
                       padding: EdgeInsets.all(2.0),
@@ -155,7 +173,33 @@ class CalculatorAppState extends State<CalculatorApp> {
                         ),
                    //     color: Colors.red,
                         onPressed: () {onPressOfButton("9",9); 
- },
+                     },
+                      )),
+                  
+                  
+                         //Componente boton %
+                      Container(
+                      padding: EdgeInsets.all(2.0),
+                      child: ElevatedButton(
+                        child: Text(
+                          "%",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                   //     color: Colors.black,
+                        onPressed: ( ) {onPressOfButton("%",16); },
+                      )),
+
+       
+                  //Componente boton c
+                  Container(
+                      padding: EdgeInsets.all(2.0),
+                      child: ElevatedButton(
+                        child: Text(
+                          "C",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                   //     color: Colors.black,
+                        onPressed: ( ) {onPressOfButton("C",14);},
                       )),
 
                 ]),
@@ -200,40 +244,6 @@ class CalculatorAppState extends State<CalculatorApp> {
                    //     color: Colors.black,
                         onPressed: ( ) {onPressOfButton("*",13);},
                       )),
-
-                  
-             ]),
-
-             Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                                              
-
-                  //Componente boton c
-                  Container(
-                      padding: EdgeInsets.all(2.0),
-                      child: ElevatedButton(
-                        child: Text(
-                          "0",
-                          style: TextStyle(color: Colors.white),
-                        ),
-                   //     color: Colors.black,
-                        onPressed: ( ) {onPressOfButton("0",0);},
-                      )),
-
-                  
-                  //Componente boton c
-                  Container(
-                      padding: EdgeInsets.all(2.0),
-                      child: ElevatedButton(
-                        child: Text(
-                          "C",
-                          style: TextStyle(color: Colors.white),
-                        ),
-                   //     color: Colors.black,
-                        onPressed: ( ) {onPressOfButton("C",14);},
-                      )),
-
                   
                   //Componente boton =
                   Container(
@@ -246,7 +256,21 @@ class CalculatorAppState extends State<CalculatorApp> {
                    //     color: Colors.black,
                         onPressed: ( ) {onPressOfButton("=",15); },
                       )),
+                  
+                  
+             ]),
 
+             Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                                              
+
+            
+
+           
+                  
+                 
+            
                 ]),
 
           ],
